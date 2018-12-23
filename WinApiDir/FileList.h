@@ -1,6 +1,6 @@
 #pragma once
-#ifndef WINAPIDIR_H
-#define WINAPIDIR_H
+#ifndef FILELIST_H
+#define FILELIST_H
 #pragma warning(disable : 4996)
 
 #include "stdafx.h"
@@ -40,6 +40,7 @@ namespace winapins {
 	public:
 		FileList();
 		FileList(std::vector<std::string> arglist);
+		FileList(const std::string path, const bool isrec = false, const int cp = CP_OEMCP);
 		FileList(const FileList & right);
 		FileList(FileList && right);
 		FileList & operator=(const FileList & right);

@@ -1,8 +1,8 @@
-// WinApiDir.cpp: определяет точку входа для консольного приложения.
+// FileList.cpp: определяет точку входа для консольного приложения.
 //
 
 #include "stdafx.h"
-#include "WinApiDir.h"
+#include "FileList.h"
 
 using namespace winapins;
 
@@ -19,7 +19,9 @@ int main(int argc, char * argv[])
 		vec.push_back(static_cast<std::string>(argv[i]));
 	}
 
-	FileList wdir(vec);
+	//FileList wdir(vec);
+
+	FileList wdir("");
 
 	std::vector<WIN32_FIND_DATA> arFindData;
 	try {
